@@ -165,7 +165,7 @@
 <!-- Блок 6 - Футер -->
 <footer class="footer-all">
     <div class="container container-footer">
-        <div>
+        <div class="footer-thumb-adress" >
         <a class="logo" lang="en" href="" ><span class="logo-first">Web</span> <span class="logo-second">Studio</span></a>
         <address> 
         <ul class="adress">
@@ -201,37 +201,39 @@
         <form class="modal-form">
             <p class="modal-head">Оставьте свои данные, мы вам перезвоним</p>
             <div class="modal-block" >
-                <input class="modal-item" type="text" name="name" id="name" autofocus />
                 <label class="modal-label" for="name"> Имя </label>
+                <input class="modal-item" type="text" name="name" id="name" autofocus />
                 <span class="form-icon">
-                    <svg class="form-icon-block"> <use href="./images/icons.svg#icon-head" width="12" heigth="12"" ></use> </svg>
+                    <svg class="form-icon-block"> <use href="./images/icons.svg#icon-head" width="18" heigth="18"" ></use> </svg>
                 </span>
             </div>
             <div class="modal-block">
-                <input class="modal-item" type="tel" name="phone" id="phone"  />
                 <label class="modal-label" for="phone">Телефон</label>
+                <input class="modal-item" type="tel" name="phone" id="phone"  />
+                
                 <span class="form-icon">
                     <svg class="form-icon-block">
-                        <use href="./images/icons.svg#icon-call" width="12" heigth="12"" ></use> </svg>
+                        <use href="./images/icons.svg#icon-call" width="18" heigth="18" ></use> </svg>
                                 </span>
             </div>
             <div class="modal-block">
-                <input class="modal-item" type="mail" name="mail" id="mail" />
                 <label class="modal-label" for="mail"> Почта </label>
+                <input class="modal-item" type="mail" name="mail" id="mail" />
                 <span class="form-icon">
                     <svg class="form-icon-block">
-                        <use href="./images/icons.svg#icon-envelope1" width="12" heigth="12"" ></use> </svg>
+                        <use href="./images/icons.svg#icon-envelope1" width="18" heigth="18" ></use> </svg>
                                                 </span>
             </div>
             <div class="modal-block">
-                <textarea class="modal-comment" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
                 <label class="modal-label" for="comment">Комментарий</label>
+                <textarea class="modal-comment" name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
+                
             </div>
             <div class="checkbox-thumb">
-                <input class="modal-checkbox" type="checkbox" name="submit" id="submit" />
-                <span class="checkbox-icon"></span>
-                <label class="checkbox-label" for="submit"> Соглашаюсь с рассылкой и принимаю <a class="checkbox-url" href="">Условия
-        договора</a> </label>
+                
+                
+                <label class="checkbox-label" for="submit"> <input class="modal-checkbox" type="checkbox" name="submit" id="submit" /> <span class="checkbox-icon"></span>Соглашаюсь с рассылкой и принимаю <a class="checkbox-url" href="">Условия
+        договора</a>  </label>
             </div>
             
             <button class="modal-button-send" type="submit">Отправить </button>

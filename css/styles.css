@@ -617,7 +617,9 @@ ul {
   display: inline-block;
   margin-bottom: 20px;
 }
-
+.footer-thumb-adress {
+  flex-grow: 1;
+}
 .logo-second {
   color: var(--color-white);
 }
@@ -666,7 +668,9 @@ ul {
 .footer-item {
   margin-right: 10px;
 }
-
+.footer-item:last-child {
+  margin-right: 0;
+}
 .footer-social-item {
   display: flex;
   justify-content: center;
@@ -725,6 +729,7 @@ ul {
   line-height: 1.88;
   letter-spacing: 00.06em;
   cursor: pointer;
+  border: transparent;
 }
 .subscribe-text {
   width: 100%;
@@ -748,12 +753,14 @@ ul {
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .modal-block {
   position: relative;
   width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
 }
 .modal-item {
   display: block;
@@ -763,22 +770,19 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
-  margin-bottom: 28px;
   transition: border-color var(--time);
 }
 .modal-label {
-  position: absolute;
-  top: -8px;
-  left: 0;
-  transform: translateY(-50%);
+  text-align: left;
   transition: color var(--time);
   font-size: 12px;
   color: var(--grey-text);
   transition: color var(--time), border-color var(--time);
+  margin-bottom: 4px;
 }
 
-.modal-item:hover + .modal-label,
-.modal-item:focus + .modal-label {
+.modal-item:hover .modal-label,
+.modal-item:focus .modal-label {
   color: var(--brand-color);
   border-color: var(--brand-color);
 }
@@ -795,16 +799,15 @@ ul {
   position: absolute;
   top: 50%;
   left: 19px;
-  transform: translateY(-50%);
   display: inline-block;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   transition: fill var(--time);
 }
 
 .form-icon-block {
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
 }
 .modal-comment {
   display: block;
@@ -821,10 +824,11 @@ ul {
 .modal-comment:hover,
 .modal-comment:focus {
   border-color: var(--brand-color);
+  color: var(--brand-color);
 }
 
-.modal-comment:hover + .modal-label,
-.modal-comment:focus + .modal-label {
+.modal-comment:hover ~ .modal-label,
+.modal-comment:focus ~ .modal-label {
   color: var(--brand-color);
   border-color: var(--brand-color);
 }
@@ -861,6 +865,7 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  margin-right: 8px;
 }
 .modal-checkbox:checked + .checkbox-icon {
   background-color: var(--brand-color);
@@ -871,6 +876,9 @@ ul {
 }
 .checkbox-label {
   color: var(--grey-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .checkbox-url {
   color: var(--brand-color);
@@ -883,6 +891,7 @@ ul {
   height: 50px;
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -890,6 +899,7 @@ ul {
   letter-spacing: 00.06em;
   color: var(--color-white);
   transition: background-color var(--time);
+  cursor: pointer;
 }
 .modal-button-send:hover,
 .modal-button-send:focus {
